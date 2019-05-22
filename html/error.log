@@ -1,0 +1,142 @@
+ERROR:root:<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Program Files\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Program Files\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Program Files\Python36\lib\http\client.py", line 1400, in connect
+    server_hostname=server_hostname)
+  File "C:\Program Files\Python36\lib\ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "C:\Program Files\Python36\lib\ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "C:\Program Files\Python36\lib\ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python36\lib\ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Dev\webscrap\webscrap\wscrap.py", line 23, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 526, in open
+    response = self._open(req, data)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 544, in _open
+    '_open', req)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+ERROR:root:<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Program Files\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Program Files\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Program Files\Python36\lib\http\client.py", line 1400, in connect
+    server_hostname=server_hostname)
+  File "C:\Program Files\Python36\lib\ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "C:\Program Files\Python36\lib\ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "C:\Program Files\Python36\lib\ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python36\lib\ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Dev\webscrap\webscrap\wscrap.py", line 23, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 526, in open
+    response = self._open(req, data)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 544, in _open
+    '_open', req)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Dev\webscrap\webscrap\wscrap.py", line 39, in write_webpage_as_html
+    fo.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
+ERROR:root:<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Program Files\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Program Files\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Program Files\Python36\lib\http\client.py", line 1400, in connect
+    server_hostname=server_hostname)
+  File "C:\Program Files\Python36\lib\ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "C:\Program Files\Python36\lib\ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "C:\Program Files\Python36\lib\ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\Python36\lib\ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Dev\webscrap\webscrap\wscrap.py", line 23, in retrieve_webpage
+    html = urlopen(self.__url)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 526, in open
+    response = self._open(req, data)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 544, in _open
+    '_open', req)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Program Files\Python36\lib\urllib\request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>
+ERROR:root:a bytes-like object is required, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Dev\webscrap\webscrap\wscrap.py", line 39, in write_webpage_as_html
+    fo.write(self.__data)
+TypeError: a bytes-like object is required, not 'str'
